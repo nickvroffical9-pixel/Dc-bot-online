@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
   res.send('Bot web server is running and healthy!');
 });
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server listening on port ${port}across all interfaces`);
 });
 
 // ================================================================
